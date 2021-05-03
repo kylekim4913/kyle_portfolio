@@ -1,0 +1,1256 @@
+@import url("common.css");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@font-face {
+  font-family: 'HSh_light';
+  src: url(../fonts/HyundaiSansHeadKRLight.ttf);
+}
+
+@font-face {
+  font-family: 'HSh_reg';
+  src: url(../fonts/HyundaiSansHeadKRRegular.ttf);
+}
+
+@font-face {
+  font-family: 'HSh_med';
+  src: url(../fonts/HyundaiSansHeadKRMedium.ttf);
+}
+
+@font-face {
+  font-family: 'HSh_bold';
+  src: url(../fonts/HyundaiSansHeadKRBold.ttf);
+}
+
+@font-face {
+  font-family: 'HSt_bold';
+  src: url(../fonts/HyundaiSansTextKRBold.ttf);
+}
+
+@font-face {
+  font-family: 'HSt_reg';
+  src: url(../fonts/HyundaiSansTextKRRegular.ttf);
+}
+
+@font-face {
+  font-family: 'Hijr';
+  src: url(../fonts/Hijrnotes.woff2);
+}
+
+@font-face {
+  font-family: 'Domaine';
+  src: url(../fonts/DomaineSansDisplay-Light.woff2);
+}
+
+.header {
+  padding: 12px 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-bottom: 3px solid black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9;
+}
+
+.header .home {
+  background: url(../img/picto_home.png) no-repeat;
+  background-size: 100%;
+  width: 32px;
+  height: 36px;
+}
+
+.header .navi {
+  font-size: 18px;
+  font-family: 'HSh_med';
+  color: #c2c0b7;
+}
+
+.header .navi .work {
+  padding: 2px 20px;
+  border-bottom: 2px solid #c2c0b7;
+  margin: 0 -4px;
+}
+
+.header .navi .work.act {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+.header .navi .about {
+  padding: 2px 20px;
+  border-bottom: 2px solid #c2c0b7;
+}
+
+.header .navi .about.act {
+  color: black;
+  border-bottom: 2px solid black;
+}
+
+main .main_page {
+  display: none;
+}
+
+main .main_page .intro {
+  width: 100%;
+  height: 700px;
+  border-bottom: 3px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+main .main_page .intro .rec_1 {
+  width: 100%;
+  height: 100%;
+  background-color: #a338ee;
+  color: white;
+}
+
+main .main_page .intro .rec_1 p {
+  position: absolute;
+  top: 500px;
+  left: 860px;
+  font-family: 'HSh_reg';
+  font-size: 18px;
+}
+
+main .main_page .intro .rec_2 {
+  width: 100%;
+  height: 460px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fa8484;
+  color: white;
+  -webkit-box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.6);
+  -webkit-animation: rec_slide_1 2s;
+          animation: rec_slide_1 2s;
+}
+
+main .main_page .intro .rec_2 h2 {
+  position: absolute;
+  top: 290px;
+  left: 610px;
+  font-family: 'HSh_bold';
+  font-size: 120px;
+}
+
+@-webkit-keyframes rec_slide_1 {
+  0% {
+    top: -100%;
+  }
+  50% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes rec_slide_1 {
+  0% {
+    top: -100%;
+  }
+  50% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+main .main_page .intro .rec_3 {
+  width: 800px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #35c8bf;
+  color: white;
+  -webkit-box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 0px 10px 1px rgba(0, 0, 0, 0.6);
+  -webkit-animation: rec_slide_2 3s;
+          animation: rec_slide_2 3s;
+}
+
+main .main_page .intro .rec_3 h2 {
+  position: absolute;
+  top: 290px;
+  left: 350px;
+  font-size: 120px;
+  font-family: 'HSh_bold';
+}
+
+@-webkit-keyframes rec_slide_2 {
+  0% {
+    left: -100%;
+  }
+  66% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes rec_slide_2 {
+  0% {
+    left: -100%;
+  }
+  66% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+main .main_page .divi_1 {
+  padding: 100px 300px 50px 300px;
+  font-family: 'HSh_bold';
+  font-size: 30px;
+  border-bottom: 3px solid black;
+}
+
+main .main_page .cp_1 {
+  overflow: hidden;
+  height: 800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main_page .cp_1 .cp1_left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+main .main_page .cp_1 .cp1_left .cp1l_logo {
+  position: absolute;
+  top: 120px;
+  left: 380px;
+  width: 160px;
+  height: 160px;
+  background: url(../img/daon_color_logo.png) no-repeat;
+  background-size: 100%;
+  opacity: 1;
+}
+
+main .main_page .cp_1 .cp1_left .cp1l_logo.act {
+  -webkit-animation: logo_opa 2s;
+          animation: logo_opa 2s;
+}
+
+@-webkit-keyframes logo_opa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes logo_opa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main .main_page .cp_1 .cp1_left .cp1l_vid video {
+  height: 800px;
+}
+
+main .main_page .cp_1 .cp1_right {
+  width: 50%;
+  height: 100%;
+  background-color: #66ccff;
+  color: white;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt {
+  margin-top: 50%;
+  margin-left: 5%;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt h2 {
+  font-family: 'HSh_bold';
+  overflow: hidden;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt h2 span {
+  display: inline-block;
+  font-size: 48px;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt h2 span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt h3 {
+  font-family: 'HSh_reg';
+  overflow: hidden;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt h3 span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt h3 span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt p:nth-of-type(1) {
+  font-family: 'HSh_light';
+  font-size: 20px;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt p:nth-of-type(1) span {
+  display: inline-block;
+  font-size: 20px;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt p:nth-of-type(1) span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt p:nth-of-type(2) {
+  font-family: 'HSh_reg';
+  overflow: hidden;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt p:nth-of-type(2) span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt p:nth-of-type(2) span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+@-webkit-keyframes txt_up {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes txt_up {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt a {
+  display: inline-block;
+  margin-top: 2%;
+  color: white;
+  border: 2px solid white;
+  padding: 2px 20px;
+}
+
+main .main_page .cp_1 .cp1_right .cp1r_txt:hover a {
+  color: cyan;
+  border: 2px solid cyan;
+}
+
+main .main_page .cp_2 {
+  overflow: hidden;
+  height: 800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main_page .cp_2 .cp2_left {
+  width: 50%;
+  height: 100%;
+  background-color: #d6c351;
+  color: white;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt {
+  margin-top: 50%;
+  margin-left: 300px;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt h2 {
+  font-family: 'HSh_bold';
+  overflow: hidden;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt h2 span {
+  display: inline-block;
+  font-size: 48px;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt h2 span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt h3 {
+  font-family: 'HSh_reg';
+  overflow: hidden;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt h3 span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt h3 span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt p:nth-of-type(1) {
+  font-family: 'HSh_light';
+  font-size: 20px;
+  margin-top: 3%;
+  overflow: hidden;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt p:nth-of-type(1) span {
+  display: inline-block;
+  font-size: 20px;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt p:nth-of-type(1) span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt p:nth-of-type(2) {
+  font-family: 'HSh_reg';
+  overflow: hidden;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt p:nth-of-type(2) span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt p:nth-of-type(2) span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt a {
+  display: inline-block;
+  margin-top: 2%;
+  color: white;
+  border: 2px solid white;
+  padding: 2px 20px;
+}
+
+main .main_page .cp_2 .cp2_left .cp2l_txt:hover a {
+  color: cyan;
+  border: 2px solid cyan;
+}
+
+main .main_page .cp_2 .cp2_right {
+  width: 50%;
+  height: 100%;
+  background: url(../img/0_cover.jpg) no-repeat;
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main_page .cp_2 .cp2_right h2 {
+  font-family: 'Domaine';
+  overflow: hidden;
+  text-align: center;
+}
+
+main .main_page .cp_2 .cp2_right h2 span {
+  font-size: 60px;
+  display: inline-block;
+}
+
+main .main_page .cp_2 .cp2_right h2 span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .cp_2 .cp2_right h3 {
+  font-family: 'Domaine';
+  overflow: hidden;
+}
+
+main .main_page .cp_2 .cp2_right h3 span {
+  font-size: 30px;
+  display: inline-block;
+}
+
+main .main_page .cp_2 .cp2_right h3 span em {
+  font-family: 'Hijr';
+  color: #c39d42;
+  padding: 0px 20px;
+}
+
+main .main_page .cp_2 .cp2_right h3 span.act {
+  -webkit-animation: txt_up 1s;
+          animation: txt_up 1s;
+}
+
+main .main_page .divi_2 {
+  padding: 100px 300px 50px 300px;
+  font-family: 'HSh_bold';
+  font-size: 30px;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}
+
+main .main_page .dp_1 {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main_page .dp_1 .dp1_left {
+  height: 100%;
+  width: 50%;
+}
+
+main .main_page .dp_1 .dp1_left .dp1l_img {
+  background: url(../img/hyu_merchan.JPG) no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+main .main_page .dp_1 .dp1_right {
+  width: 50%;
+  height: 100%;
+}
+
+main .main_page .dp_1 .dp1_right .dp1r_top {
+  width: 100%;
+  height: 50%;
+  background-color: #002c5f;
+  color: white;
+  padding-left: 5%;
+  padding-top: 20%;
+}
+
+main .main_page .dp_1 .dp1_right .dp1r_top h3 {
+  overflow: hidden;
+  font-size: 20px;
+  font-family: 'HSh_reg';
+}
+
+main .main_page .dp_1 .dp1_right .dp1r_top h2:nth-of-type(1) {
+  font-family: 'HSh_bold';
+  font-size: 48px;
+}
+
+main .main_page .dp_1 .dp1_right .dp1r_top h2:nth-of-type(2) {
+  font-family: 'HSh_reg';
+  font-size: 30px;
+}
+
+main .main_page .dp_1 .dp1_right .dp1r_top a {
+  display: inline-block;
+  margin-top: 2%;
+  color: white;
+  border: 2px solid white;
+  padding: 2px 20px;
+}
+
+main .main_page .dp_1 .dp1_right .dp1r_top:hover a {
+  color: cyan;
+  border: 2px solid cyan;
+}
+
+main .main_page .dp_1 .dp1_right .dp1r_bot {
+  width: 100%;
+  height: 50%;
+  background-color: #ffecde;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main_page .dp_1 .dp1_right .dp1r_bot span {
+  display: block;
+  width: 300px;
+  height: 400px;
+  background: url(../img/gen_merchan.png) no-repeat;
+  background-size: 100%;
+  background-position-y: 80px;
+}
+
+main .main_page .dp_2 {
+  width: 100%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main_page .dp_2 .dp2_left {
+  width: 50%;
+  height: 50%;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_top {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding-left: 300px;
+  padding-top: 20%;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_top h3 {
+  font-family: 'HSh_light';
+  font-size: 20px;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_top h2:nth-of-type(1) {
+  font-family: 'HSh_bold';
+  font-size: 46px;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_top h2:nth-of-type(2) {
+  font-family: 'HSh_reg';
+  font-size: 30px;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_top a {
+  display: inline-block;
+  margin-top: 2%;
+  color: white;
+  border: 2px solid white;
+  padding: 2px 20px;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_top a:hover {
+  color: cyan;
+  border: 2px solid cyan;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_top:hover a {
+  color: cyan;
+  border: 2px solid cyan;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_bot {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_bot .dp2lb_left {
+  display: block;
+  width: 60%;
+  height: 100%;
+  background: url(../img/dge_img_1.jpg) no-repeat;
+  background-size: cover;
+}
+
+main .main_page .dp_2 .dp2_left .dp2l_bot .dp2lb_right {
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: url(../img/dge_img_2.jpg) no-repeat center #c6c6c6;
+  background-size: 70%;
+  background-position-x: right;
+}
+
+main .main_page .dp_2 .dp2_right {
+  width: 50%;
+  height: 100%;
+  background: url(../img/dge_logo_bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+main .main_page .dp_2 .dp2_right .dp2r_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main_page .dp_2 .dp2_right .dp2r_img span:nth-of-type(1) {
+  width: 40%;
+  height: 20%;
+  display: block;
+  background: url(../img/dge_logo.png) no-repeat;
+  background-size: 100%;
+  margin-bottom: 5%;
+}
+
+main .main_page .dp_2 .dp2_right .dp2r_img span:nth-of-type(2) {
+  width: 15%;
+  height: 20%;
+  display: block;
+  background: url(../img/lbc_logo.png) no-repeat;
+  background-size: 100%;
+  margin-bottom: 2%;
+}
+
+main .main_page .dp_2 .dp2_right .dp2r_img span:nth-of-type(3) {
+  width: 25%;
+  height: 20%;
+  display: block;
+  background: url(../img/tmtg_logo.png) no-repeat;
+  background-size: 100%;
+}
+
+main .main_page.act {
+  display: block;
+}
+
+main .sub_about {
+  background: #fe9d9d;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  display: none;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  opacity: 1;
+  -webkit-animation: about_bg 1s;
+          animation: about_bg 1s;
+}
+
+main .sub_about .close {
+  position: fixed;
+  right: 10%;
+  top: 12%;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: about_head 3s;
+          animation: about_head 3s;
+}
+
+main .sub_about .close span {
+  width: 30px;
+  height: 5px;
+  display: inline-block;
+  background-color: white;
+  position: absolute;
+  top: 40%;
+}
+
+main .sub_about .close span:nth-of-type(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+main .sub_about .close span:nth-of-type(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+main .sub_about .ab_body {
+  width: 75%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #35c8bf;
+  -webkit-box-shadow: -5px 0px 5px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: -5px 0px 5px 1px rgba(0, 0, 0, 0.3);
+  -webkit-animation: about_tog 2s;
+          animation: about_tog 2s;
+}
+
+main .sub_about .ab_body .sec1 {
+  height: 100%;
+  width: 50%;
+}
+
+main .sub_about .ab_body .sec1 .photo {
+  height: 300px;
+  width: 400px;
+  background: cyan;
+  opacity: .6;
+  margin-top: 20%;
+}
+
+main .sub_about .ab_body .sec1 h2 {
+  font-family: 'HSh_bold';
+  font-size: 4em;
+  -webkit-transform: translateX(-20%);
+          transform: translateX(-20%);
+  margin-top: 5%;
+  opacity: 1;
+  -webkit-animation: about_head 3s;
+          animation: about_head 3s;
+}
+
+@-webkit-keyframes about_head {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes about_head {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main .sub_about .ab_body .sec1 p {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+main .sub_about .ab_body .sec2 {
+  margin-top: 10%;
+  color: #000;
+  font-family: 'HSt_reg';
+  font-size: 1em;
+}
+
+main .sub_about .ab_body .sec2 p:nth-of-type(1) {
+  margin-bottom: 20%;
+}
+
+main .sub_about .ab_body .sec2 .sec2_body b:nth-of-type(3) {
+  display: inline-block;
+  margin-bottom: 20%;
+}
+
+main .sub_about .ab_body .sec2 .sec2_body b:nth-of-type(8) {
+  display: inline-block;
+  margin-bottom: 20%;
+}
+
+main .sub_about .ab_body .sec2 .sec2_body .s2b_cap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .sub_about .ab_body .sec2 .sec2_body .s2b_cap .right {
+  margin-left: 10%;
+}
+
+main .sub_about .ab_body .sec2 .sec2_body em {
+  font-style: normal;
+  color: white;
+}
+
+main .sub_about .ab_body .sec2 .sec2_body em:nth-of-type(1) {
+  display: inline-block;
+  margin-top: 20%;
+}
+
+@-webkit-keyframes about_tog {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes about_tog {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes about_bg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes about_bg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+main .sub_about.act {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .hyundai {
+  display: none;
+}
+
+main .hyundai .intro {
+  width: 100%;
+  height: 540px;
+  background: url(../img/hd_intro_bg.png) no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .hyundai .intro .frame {
+  width: 80%;
+  height: 80%;
+  background: rgba(255, 255, 255, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .hyundai .intro .frame h2 {
+  font-family: 'HSh_bold';
+  font-size: 3em;
+}
+
+main .hyundai .part1 {
+  width: 100%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .hyundai .part1 h2 {
+  font-family: 'HSh_bold';
+  font-size: 2em;
+}
+
+main .hyundai .part1 div {
+  margin: 50px 0;
+  width: 1300px;
+  height: 240px;
+  background: url(../img/hd_intro_logo.png) no-repeat;
+  background-size: cover;
+}
+
+main .hyundai .part1 p {
+  font-family: 'HSt_reg';
+}
+
+main .hyundai .part2 .p2_1 {
+  width: 100%;
+  height: 1200px;
+  background: url(../img/hd_cap1.png) no-repeat;
+  background-size: cover;
+}
+
+main .hyundai .part2 .p2_2 {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .hyundai .part2 .p2_2 .p2_2_left {
+  width: 20%;
+  height: 100%;
+  background: url(../img/hd_cap2.png) no-repeat;
+  background-size: cover;
+}
+
+main .hyundai .part2 .p2_2 .p2_2_mid {
+  width: 60%;
+  height: 100%;
+  background: #002c5f;
+  color: #fff;
+  text-align: right;
+  padding-right: 5%;
+  padding-top: 10%;
+}
+
+main .hyundai .part2 .p2_2 .p2_2_mid h2 {
+  font-family: 'HSh_bold';
+  font-size: 3em;
+}
+
+main .hyundai .part2 .p2_2 .p2_2_mid p {
+  font-family: 'HSh_reg';
+  font-size: 1em;
+}
+
+main .hyundai .part2 .p2_2 .p2_2_right {
+  width: 20%;
+  height: 100%;
+  background: url(../img/hd_cap3.png) no-repeat;
+  background-size: cover;
+  background-position-y: center;
+}
+
+main .hyundai .part3 {
+  width: 100%;
+  height: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .hyundai .part3 .p3_left {
+  width: 450px;
+  height: 340px;
+  background: url(../img/fb_caption_03.jpg) no-repeat;
+  background-size: cover;
+  border: 4px solid #002c5f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3em;
+}
+
+main .hyundai .part3 .p3_right {
+  margin-left: 4%;
+}
+
+main .hyundai .part3 .p3_right p {
+  font-family: 'HSh_reg';
+  font-size: 2em;
+}
+
+main .hyundai .part3 .p3_right p em {
+  font-style: normal;
+  font-size: 3em;
+  font-family: 'HSh_bold';
+}
+
+main .hyundai .part4 {
+  width: 100%;
+  height: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 200px;
+}
+
+main .hyundai .part4 h3 {
+  font-family: 'HSh_bold';
+  font-size: 2em;
+}
+
+main .hyundai .part4 .p4_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .hyundai .part4 .p4_body .p4_left {
+  margin: 5% 5%;
+}
+
+main .hyundai .part4 .p4_body .p4_left div {
+  width: 300px;
+  height: 300px;
+  background: url(../img/btl.png) no-repeat;
+  background-size: cover;
+}
+
+main .hyundai .part4 .p4_body .p4_left span {
+  display: block;
+  text-align: center;
+  font-family: 'HSt_bold';
+  font-size: 1.5em;
+}
+
+main .hyundai .part4 .p4_body .p4_left a {
+  display: block;
+  text-align: center;
+  font-family: 'HSt_bold';
+  margin: 10px 0;
+}
+
+main .hyundai .part4 .p4_body .p4_right {
+  margin: 5% 5%;
+}
+
+main .hyundai .part4 .p4_body .p4_right div {
+  width: 300px;
+  height: 300px;
+  background: url(../img/atl.png) no-repeat;
+  background-size: 70%;
+  background-position: center;
+}
+
+main .hyundai .part4 .p4_body .p4_right span {
+  display: block;
+  text-align: center;
+  font-family: 'HSt_bold';
+  font-size: 1.5em;
+}
+
+main .hyundai .part4 .p4_body .p4_right a {
+  display: block;
+  text-align: center;
+  font-family: 'HSt_bold';
+  margin: 10px 0;
+}
+
+main .hyundai.act {
+  display: block;
+}
+
+main .foot {
+  border-top: 3px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 340px;
+  background-color: #35c8bf;
+  color: #fff;
+  font-family: 'HSt_reg';
+  line-height: 2em;
+}
+/*# sourceMappingURL=main.css.map */
